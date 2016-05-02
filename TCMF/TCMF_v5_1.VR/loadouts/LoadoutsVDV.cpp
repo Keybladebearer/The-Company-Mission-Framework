@@ -39,64 +39,64 @@ class RUS {
 			//=== Weapons ===
 			
 			//Attachments
-			#define rifle_sup "hlc_muzzle_545SUP_AK"
+			#define rifle_sup "CUP_muzzle_PBS4"
 			#define ar_sup "hlc_muzzle_762SUP_AK"
-			#define aim_scope "hlc_optic_kobra"
-			#define ar_scope "HLC_Optic_1p29"
-			#define marksman_scope "HLC_Optic_PSO1"
-			#define mat_scope "rhs_acc_pgo7v"
+			#define aim_scope "CUP_optic_Kobra"
+			#define ar_scope "CUP_optic_PechenegScope"
+			#define marksman_scope "CUP_optic_PSO_1"
+			#define mat_scope "CUP_optic_PGO7V3"
 			
 			// Standard Riflemen (Assistants, Rifleman)
-			#define rifle "hlc_rifle_aks74"
-			#define riflemag "hlc_30Rnd_545x39_B_AK"
-			#define riflemag_tr "hlc_30Rnd_545x39_t_ak" 
+			#define rifle "CUP_arifle_AKS74"
+			#define riflemag "CUP_30Rnd_545x39_AK_M"
+			#define riflemag_tr "CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M" 
 			
 			//Auto-Rifleman
-			#define ar "hlc_rifle_rpk"
-			#define armag "hlc_75Rnd_762x39_m_rpk" // Mixed tracer-ball 75 Round Mag
+			#define ar "CUP_arifle_RPK74_45"
+			#define armag "CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M" // Green Tracer 45 Round
 			
 			//Rifleman AT
-			#define rat "rhs_weap_rpg26"
-			#define ratmag "rhs_rpg26_mag"
+			#define rat "CUP_launch_RPG18"
+			#define ratmag "ACE_PreloadedMissileDummy_RPG18_CUP"
 			
 			//Medium MG
-			#define mmg "rhs_weap_pkm"
-			#define mmgmag "rhs_100Rnd_762x54mmR_green"
+			#define mmg "CUP_lmg_Pecheneg"
+			#define mmgmag "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"
 			
 			//Medium AT
-			#define mat "rhs_weap_rpg7"
-			#define matmag "rhs_rpg7_PG7VL_mag"
+			#define mat "CUP_launch_RPG7V"
+			#define matmag "CUP_PG7VL_M"
 			
 			// Rifle with GL and HE grenades - CO, DC, FTLs
-			#define glrifle "hlc_rifle_aks74_GL"
-			#define glriflemag "hlc_30Rnd_545x39_B_AK"
-			#define glriflemag_tr "hlc_30Rnd_545x39_t_ak"
-			#define glmag {"hlc_VOG25_AK,15"} //use with HLC AK's only
+			#define glrifle "CUP_arifle_AK74_GL"
+			#define glriflemag "CUP_30Rnd_545x39_AK_M"
+			#define glriflemag_tr "CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M"
+			#define glmag {"CUP_1Rnd_HE_GP25_M,15"} //use with HLC AK's only
 			
 			//Marksman/Sniper
-			#define dmr "rhs_weap_svdp_wd"
-			#define sniper "rhs_weap_svdp_wd" // has camo skin
-			#define dmrMag "rhs_10Rnd_762x54mmR_7N1"
+			#define dmr "CUP_srifle_SVD"
+			#define sniper "CUP_srifle_SVD_des" // has camo skin
+			#define dmrMag "CUP_10Rnd_762x54_SVD_M"
 			
 			// Standard Sub-machine Gun/Personal Defence Weapon (Aircraft Pilot, Sub-machine-gunner, Vehicle Crew) 
-			#define smg "hlc_rifle_aks74u" 
-			#define smgmag "hlc_30Rnd_545x39_B_AK"
-			#define smgmag_tr "hlc_30Rnd_545x39_t_ak"
+			#define smg "CUP_arifle_AKS74U" 
+			#define smgmag "CUP_30Rnd_545x39_AK_M"
+			#define smgmag_tr "CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M"
 			
 			// Smoke for FTLs, Squad Leaders, etc //use with HLC AK's only
-			#define glsmoke {"hlc_GRD_White",6},  \
-								{"hlc_GRD_green",3}, \
-								{"hlc_GRD_Red",3},  \
-								{"hlc_GRD_yellow",3}
+			#define glsmoke {"CUP_1Rnd_SMOKE_GP25_M",6},  \
+								{"CUP_1Rnd_SmokeGreen_GP25_M",3}, \
+								{"CUP_1Rnd_SmokeRed_GP25_M",3},  \
+								{"CUP_1Rnd_SmokeYellow_GP25_M",3}
 
 			// Flare gl grenades - CO, DC, FTLs        //Dont use with HLC AK's at all
-			#define glflare 	{"rhs_VG40OP_white",3}, \
-									{"rhs_VG40OP_red",2}, \
-									{"rhs_VG40OP_green",2}
+			#define glflare 	{"CUP_FlareWhite_GP25_M",3}, \
+									{"CUP_FlareRed_GP25_M",2}, \
+									{"CUP_FlareGreen_GP25_M",2}
 									
 			// Grenades
-			#define grenade "rhs_mag_rgd5"
-			#define smokegrenadewhite "rhs_mag_rdg2_white"
+			#define grenade "CUP_HandGrenade_RGD5"
+			#define smokegrenadewhite "SmokeShell"
 			#define handFlareRed "ACE_HandFlare_Red"
 			#define handFlareGreen "ACE_HandFlare_Green"
 			#define handFlareWhite "ACE_HandFlare_White"
@@ -133,11 +133,11 @@ class RUS {
 			//Double Misc
 			#define toolkit "ToolKit"
 			#define explosive "DemoCharge_Remote_Mag"
-			#define at_mine "rhs_mine_tm62m_mag"
-			#define ap_mine "rhs_mine_pmn2_mag"
+			#define at_mine "CUP_MineE_M"
+			#define ap_mine "APERSMine_Range_Mag"
 			#define minedetector "MineDetector"
 			#define binoculars "Binocular"
-			#define range_finder "rhs_pdu4"
+			#define range_finder "ACE_MX2A"
 			#define laserd "Laserdesignator"
 			#define battery "Laserbatteries"
 			
@@ -148,38 +148,38 @@ class RUS {
 			//=== Clothes ===
 
 			//Uniform		
-			#define default_uniform "rhs_uniform_flora_patchless"
-			#define pilot_uniform "rhs_uniform_df15"
-			#define sniper_uniform "rhs_uniform_flora_patchless"
+			#define default_uniform "O_RUS_Flora_2_VDV", "CUP_U_O_RUS_Flora_1_VDV"
+			#define pilot_uniform "CUP_U_O_RUS_Flora_1_VDV"
+			#define sniper_uniform "CUP_U_O_RUS_Ghillie"
 				
 			//Headgear
-			#define leader_headgear "rhs_fieldcap"
-			#define default_headgear "rhs_6b27m"
-			#define vcrew_headgear "rhs_tsh4"
-			#define pilot_headgear "rhs_zsh7a"
-			#define aircrew_headgear "rhs_zsh7a_mike"
-			#define sniper_headgear "rhs_6b28_flora_bala"
+			#define leader_headgear "CUP_H_RUS_Beret_VDV"
+			#define default_headgear "CUP_H_RUS_6B27"
+			#define vcrew_headgear "CUP_H_RUS_TSH_4_Brown"
+			#define pilot_headgear "CUP_H_RUS_ZSH_Shield_Down"
+			#define aircrew_headgear "CUP_H_RUS_ZSH_Shield_Up"
+			#define sniper_headgear ""
 			
 			//Backpack
-			#define default_backpack "rhs_assault_umbts"
-			#define rpg_backpack "rhs_assault_umbts"
-			#define pilot_backpack "rhs_assault_umbts"
-			#define engineer_backpack "B_Kitbag_sgg"
-			#define mortg_backpack "I_Mortar_01_weapon_F"
-			#define morta_backpack "I_Mortar_01_support_F"
+			#define default_backpack "CUP_B_RUS_Pack_MG"
+			#define rpg_backpack "CUP_B_RUS_Pack_AT"
+			#define pilot_backpack "CUP_B_AssaultPack_Coyote"
+			#define engineer_backpack "CUP_B_RUS_Pack_Engineer"
+			#define mortg_backpack "CUP_B_Podnos_Gun_Bag"
+			#define morta_backpack "CUP_B_Podnos_Bipod_Bag"
 			
 			
 			//Vests
-			#define vest_default "rhs_6b23_rifleman"
-			#define vest_medic "rhs_6b23_medic"
-			#define vest_engineer "rhs_6b23_engineer"
-			#define vest_sniper "rhs_6b23_sniper"
-			#define vest_vehiclecrew "rhs_6b23_crew"
-			#define vest_pilot "rhs_6sh46"
-			#define vest_leader "rhs_6b23_rifleman"
+			#define vest_default "CUP_V_RUS_6B3_2"
+			#define vest_medic "CUP_V_RUS_6B3_3"
+			#define vest_engineer "CUP_V_RUS_6B3_1"
+			#define vest_sniper "CUP_V_RUS_Smersh_1"
+			#define vest_vehiclecrew "CUP_V_RUS_6B3_3"
+			#define vest_pilot "CUP_V_I_Carrier_Belt"
+			#define vest_leader "CUP_V_RUS_6B3_1"
 			
 			//Face
-			#define facecover "rhs_scarf"
+			#define facecover ""
 			
 			//=== EQUIPMENT ===
 			//MUST BE ONE LINE
