@@ -1,6 +1,6 @@
-class RUS {
+class VDV {
 			// Example: [this,"RUS","PL"] call tb3_fLoadout; [this, class, loadout]	
-			// Russian OpFor Gear Script by HawkBlade
+			// Russian VDV Gear Script by Keyblade
 			// Info:
 			// - If it is crashing ARMA, check for a missing comma, or " (it will tell you the line number to look at)
 			// - For multi line definitions use \
