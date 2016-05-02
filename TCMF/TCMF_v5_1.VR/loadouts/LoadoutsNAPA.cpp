@@ -1,6 +1,6 @@
-class EUG {
+class NAPA {
 			// Example: [this,"EUG","PL"] call tb3_fLoadout; [this, class, loadout]	
-			// Novorossiya Rebel Gearscript by Keyblade
+			// NAPA Rebel Gearscript by Keyblade
 			// Info:
 			// - If it is crashing ARMA, check for a missing comma, or " (it will tell you the line number to look at)
 			// - For multi line definitions use \
@@ -19,7 +19,7 @@ class EUG {
 			//		ARR			- Assistant automatic rifleman 
 			//		RAT			- Rifleman (AT)
 			//    MMG     - Medium MG
-			//    MMGA    - Medium MG assistant
+			//    	MMGA    - Medium MG assistant
 			//		MAT			- Medium AT
 			//		MATA		- Medium AT assistant
 			//		MARK		- Marksman
@@ -39,69 +39,69 @@ class EUG {
 			//=== Weapons ===
 			
 			//Attachments
-			#define rifle_sup "rhs_acc_pbs1"
-			#define ar_sup "hlc_muzzle_762SUP_AK"
-			#define aim_scope "hlc_optic_kobra"
-			#define ar_scope "HLC_Optic_1p29"
-			#define marksman_scope "HLC_Optic_PSO1"
-			#define mat_scope "rhs_acc_pgo7v"
+			#define rifle_sup "CUP_muzzle_PBS4"
+			#define ar_sup "CUP_muzzle_PBS4" 
+			#define aim_scope "CUP_optic_Kobra"
+			#define ar_scope ""
+			#define marksman_scope "CUP_optic_PSO_1"
+			#define mat_scope "CUP_optic_PGO7V3"
 			
 			// Standard Riflemen (Assistants, Rifleman)
-			#define rifle "rhs_weap_akm"
-			#define riflemag "rhs_30Rnd_762x39mm"
-			#define riflemag_tr "rhs_30Rnd_762x39mm_tracer" 
+			#define rifle "CUP_arifle_AKM"
+			#define riflemag "CUP_30Rnd_762x39_AK47_M"
+			#define riflemag_tr "CUP_30Rnd_762x39_AK47_M" 
 			
 			//Auto-Rifleman
-			#define ar "hlc_rifle_rpk"
-			#define armag "hlc_75Rnd_762x39_m_rpk" // Mixed tracer-ball 75 Round Mag
+			#define ar "CUP_arifle_RPK74_45"
+			#define armag "CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M" // Green Tracer 45 Round
 			
 			//Rifleman AT
-			#define rat "rhs_weap_rpg26"
-			#define ratmag "rhs_rpg26_mag"
+			#define rat "CUP_launch_RPG18"
+			#define ratmag "ACE_PreloadedMissileDummy_RPG18_CUP"
 			
 			//Medium MG
-			#define mmg "rhs_weap_pkm"
-			#define mmgmag "rhs_100Rnd_762x54mmR_green"
+			#define mmg "CUP_lmg_PKM"
+			#define mmgmag "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"
 			
 			//Medium AT
-			#define mat "rhs_weap_rpg7"
-			#define matmag "rhs_rpg7_PG7VL_mag"
+			#define mat "CUP_launch_RPG7V"
+			#define matmag "CUP_PG7VL_M"
 			
 			// Rifle with GL and HE grenades - CO, DC, FTLs
-			#define glrifle "rhs_weap_akm_gp25"
-			#define glriflemag "rhs_30Rnd_762x39mm"
-			#define glriflemag_tr "rhs_30Rnd_762x39mm_tracer"
-			#define glmag {"hlc_VOG25_AK,15"} //use with HLC AK's only
+			#define glrifle "CUP_arifle_AK74_GL"
+			#define glriflemag "CUP_30Rnd_545x39_AK_M"
+			#define glriflemag_tr "CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M"
+			#define glmag {"CUP_1Rnd_HE_GP25_M,15"} //use with HLC AK's only
 			
 			//Marksman/Sniper
-			#define dmr "rhs_weap_svdp_wd"
-			#define sniper "rhs_weap_svdp_wd" // has camo skin
-			#define dmrMag "rhs_10Rnd_762x54mmR_7N1"
+			#define dmr "CUP_srifle_SVD"
+			#define sniper "CUP_srifle_SVD_des" // has camo skin
+			#define dmrMag "CUP_10Rnd_762x54_SVD_M"
 			
 			// Standard Sub-machine Gun/Personal Defence Weapon (Aircraft Pilot, Sub-machine-gunner, Vehicle Crew) 
-			#define smg "rhs_weap_akms" 
-			#define smgmag "rhs_30Rnd_762x39mm"
-			#define smgmag_tr "rhs_30Rnd_762x39mm_tracer"
+			#define smg "CUP_arifle_AKS74U" 
+			#define smgmag "CUP_30Rnd_545x39_AK_M"
+			#define smgmag_tr "CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M"
 			
 			// Smoke for FTLs, Squad Leaders, etc //use with HLC AK's only
-			#define glsmoke {"hlc_GRD_White",6},  \
-								{"hlc_GRD_green",3}, \
-								{"hlc_GRD_Red",3},  \
-								{"hlc_GRD_yellow",3}
+			#define glsmoke {"CUP_1Rnd_SMOKE_GP25_M",6},  \
+								{"CUP_1Rnd_SmokeGreen_GP25_M",3}, \
+								{"CUP_1Rnd_SmokeRed_GP25_M",3},  \
+								{"CUP_1Rnd_SmokeYellow_GP25_M",3}
 
 			// Flare gl grenades - CO, DC, FTLs        //Dont use with HLC AK's at all
-			#define glflare 	{"rhs_VG40OP_white",3}, \
-									{"rhs_VG40OP_red",2}, \
-									{"rhs_VG40OP_green",2}
+			#define glflare 	{"CUP_FlareWhite_GP25_M",3}, \
+									{"CUP_FlareRed_GP25_M",2}, \
+									{"CUP_FlareGreen_GP25_M",2}
 									
 			// Grenades
-			#define grenade "rhs_mag_rgd5"
-			#define smokegrenadewhite "rhs_mag_rdg2_white"
+			#define grenade "CUP_HandGrenade_RGD5"
+			#define smokegrenadewhite "SmokeShell"
 			#define handFlareRed "ACE_HandFlare_Red"
 			#define handFlareGreen "ACE_HandFlare_Green"
 			#define handFlareWhite "ACE_HandFlare_White"
 			#define handFlareYellow "ACE_HandFlare_Yellow"
-			
+						
 			//=== MISC ===
 			
 			//Chemical lights
@@ -123,6 +123,7 @@ class EUG {
 								{"ACE_EarPlugs",1}, \
 								{"ACE_Flashlight_XL50",1}
 								
+			
 			//Other ace
 			#define ace_epipen "ACE_epinephrine" // For PC, SL, FTL
 			#define ace_sparebarrel "ACE_SpareBarrel"
@@ -133,11 +134,11 @@ class EUG {
 			//Double Misc
 			#define toolkit "ToolKit"
 			#define explosive "DemoCharge_Remote_Mag"
-			#define at_mine "rhs_mine_tm62m_mag"
-			#define ap_mine "rhs_mine_pmn2_mag"
+			#define at_mine "CUP_MineE_M"
+			#define ap_mine "APERSMine_Range_Mag"
 			#define minedetector "MineDetector"
 			#define binoculars "Binocular"
-			#define range_finder "rhs_pdu4"
+			#define range_finder "ACE_MX2A"
 			#define laserd "Laserdesignator"
 			#define battery "Laserbatteries"
 			
@@ -148,38 +149,37 @@ class EUG {
 			//=== Clothes ===
 
 			//Uniform		
-			#define default_uniform "LOP_U_US_Fatigue_04", "LOP_U_US_Fatigue_03", "LOP_U_US_Fatigue_01", "LOP_U_US_Fatigue_02"
-			#define pilot_uniform "rhs_uniform_m88_patchless"
-			#define sniper_uniform "LOP_U_US_Fatigue_04"
+			#define default_uniform "CUP_U_I_GUE_Flecktarn2", "CUP_U_I_GUE_Flecktarn", "CUP_U_I_GUE_Woodland1"
+			#define pilot_uniform "CUP_U_I_Pilot_01"
+			#define sniper_uniform "CUP_U_I_GUE_Flecktarn3"
 				
 			//Headgear
-			#define leader_headgear "rhs_6b26_green"
-			#define default_headgear "rhs_6b26_bala_green"
-			#define vcrew_headgear "rhs_tsh4_bala"
-			#define pilot_headgear "rhs_zsh7a"
-			#define aircrew_headgear "rhs_gssh18"
-			#define sniper_headgear "H_Shemag_olive"
+			#define leader_headgear "CUP_H_NAPA_Fedora"
+			#define default_headgear "G_Bandanna_khk"
+			#define vcrew_headgear "CUP_H_TK_TankerHelmet"
+			#define pilot_headgear "CUP_H_TK_PilotHelmet"
+			#define aircrew_headgear "CUP_H_PMC_EP_Headset"
+			#define sniper_headgear "G_Balaclava_oli"
 			
 			//Backpack
-			#define default_backpack "rhs_sidor"
-			#define rpg_backpack "rhs_sidor"
-			#define pilot_backpack "rhs_sidor"
-			#define engineer_backpack "B_Carryall_oli"
-			#define mortg_backpack "I_Mortar_01_weapon_F"
-			#define morta_backpack "I_Mortar_01_support_F"
-			
+			#define default_backpack "CUP_B_HikingPack_Civ"
+			#define rpg_backpack "CUP_B_RPGPack_Khaki"
+			#define pilot_backpack "CUP_B_USMC_AssaultPack"
+			#define engineer_backpack "CUP_B_HikingPack_Civ"
+			#define mortg_backpack "CUP_B_M252_Gun_Bag"
+			#define morta_backpack "CUP_B_M252_Bipod_Bag"
 			
 			//Vests
-			#define vest_default "rhs_vydra_3m"
-			#define vest_medic "rhs_vydra_3m"
-			#define vest_engineer "rhs_vydra_3m"
-			#define vest_sniper "rhs_vydra_3m"
-			#define vest_vehiclecrew "rhs_6b23_crew"
-			#define vest_pilot "rhs_6sh46"
-			#define vest_leader "LOP_V_6Sh92_Radio_OLV"
+			#define vest_default "CUP_V_I_Carrier_Belt"
+			#define vest_medic "CUP_V_I_Carrier_Belt"
+			#define vest_engineer "CUP_V_I_Carrier_Belt"
+			#define vest_sniper "CUP_V_I_Carrier_Belt"
+			#define vest_vehiclecrew "CUP_V_I_Carrier_Belt"
+			#define vest_pilot "CUP_V_I_Carrier_Belt"
+			#define vest_leader "CUP_V_B_GER_Carrier_Rig_3_Brown"
 			
 			//Face
-			#define facecover "rhs_scarf"
+			#define facecover ""
 			
 			//=== EQUIPMENT ===
 			//MUST BE ONE LINE
