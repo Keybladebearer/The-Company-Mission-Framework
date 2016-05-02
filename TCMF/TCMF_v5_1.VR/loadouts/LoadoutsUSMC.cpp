@@ -855,7 +855,7 @@ class USMC {
 						{toolkit,1}
 					};
 				headgear[] = {pilot_headgear};
-				uniform[] = {default_uniform};
+				uniform[] = {pilot_uniform};
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
