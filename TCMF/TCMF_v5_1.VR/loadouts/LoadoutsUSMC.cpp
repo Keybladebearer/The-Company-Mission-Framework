@@ -1,6 +1,6 @@
-class USA {
+class USMC {
 			// Example: [this,"USA","PL"] call tb3_fLoadout; [this, class, loadout]	
-			// Default BlueFor Gear Script by HawkBlade
+			// Default US Marine Gear Script by Keyblade
 			// Info:
 			// - If it is crashing ARMA, check for a missing comma, or " (it will tell you the line number to look at, if a definition is in front check that)
 			// - For multi line definitions use \
@@ -8,25 +8,25 @@ class USA {
 			
 			//		Infantry Loadouts
 			//		PC			- Platoon Commander 
-			//		RTO 		- Platoon Sgt. (as Radio Operator)
+			//		RTO 			- Platoon Sgt. (as Radio Operator)
 			//		SL 			- Squad Leader
-			//      FO          - Forward Observer
+			//      	FO          		- Forward Observer
 			//		MOL			- Mortar Leader
-			//		MED 		- Medic
+			//		MED 			- Medic
 			//		FTL			- Fire team leader
-			//		RIF 		- Rifleman 
+			//		RIF 			- Rifleman 
 			//		AR 			- Automatic rifleman
 			//		ARR			- Assistant automatic rifleman 
 			//		RAT			- Rifleman (AT)
-			//      MMG         - Medium MG
-			//      MMGA        - Medium MG assistant
+			//      	MMG     	    	- Medium MG
+			//		MMGA        		- Medium MG assistant
 			//		MAT			- Medium AT
-			//		MATA		- Medium AT assistant
-			//		MARK		- Marksman
+			//		MATA			- Medium AT assistant
+			//		MARK			- Marksman
 			//		SN			- Sniper
 			//		SP			- Spotter (for sniper) 
 			//		VC			- Vehicle Crew 
-			//		PIL		    -Pilot / Aircrew
+			//		PIL			- Pilot / Aircrew
 			//		ENG			- Engineer
 			//
 			//		Vehicle Cargo Loadouts
@@ -39,74 +39,74 @@ class USA {
 			//=== Weapons ===
 			
 			//Attachments
-			#define suppressor "rhsusf_acc_rotex5_grey" // Rifle only
-			#define laser_light "rhsusf_acc_anpeq15_light" // Rifle only
+			#define suppressor "CUP_muzzle_snds_M16" // Rifle only
+			#define carbine_suppressor "CUP_muzzle_snds_SCAR_L" // Carbine only	
+			#define laser_light "CUP_acc_ANPEQ_15" // Rifle/Carbine only
 			
-			#define aim_scope "rhsusf_acc_compm4"
-			#define holo_scope "rhsusf_acc_eotech_552"
-			#define rifle_scope "rhsusf_acc_ACOG"
-			#define mg_scope "rhsusf_acc_ELCAN"
-			#define sniper_scope "rhsusf_acc_LEUPOLDMK4"
-			#define marksman_scope "hlc_optic_LRT_m14"
+			#define aim_scope "CUP_optic_CompM4"
+			#define holo_scope "CUP_optic_Eotech533"
+			#define rifle_scope "CUP_optic_ACOG"
+			#define mg_scope "CUP_optic_ElcanM145"
+			#define sniper_scope "CUP_optic_LeupoldMk4"
+			#define marksman_scope "CUP_optic_LeupoldM3LR"
 			
 			// Standard Riflemen (Assistants, Rifleman)
-			#define rifle "rhs_weap_m16a4_carryhandle_grip"
-			#define riflemag "rhs_mag_30Rnd_556x45_M855A1_Stanag"
-			#define riflemag_tr "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"
-			#define carbine "rhs_weap_m4a1_carryhandle_grip2"
-			#define carbinemag "rhs_mag_30Rnd_556x45_M855A1_Stanag"
-			#define carbinemag_tr "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"
+			#define rifle "CUP_arifle_M16A4_Base"
+			#define riflemag "CUP_30Rnd_556x45_Stanag"
+			#define riflemag_tr "30Rnd_556x45_Stanag_Tracer_Red"
+			#define carbine "CUP_arifle_Mk16_CQC_FG"
+			#define carbinemag "CUP_30Rnd_556x45_Stanag"
+			#define carbinemag_tr "30Rnd_556x45_Stanag_Tracer_Red"
 			
 			//Auto-Rifleman
-			#define ar "rhs_weap_m249_pip_L"
-			#define armag "rhs_200rnd_556x45_M_SAW" // Mixed ball-tracer
+			#define ar "CUP_lmg_m249_pip3"
+			#define armag "CUP_200Rnd_TE4_Red_Tracer_556x45_L110A1" // Red tracer
 			
 			//Rifleman AT
-			#define rat "rhs_weap_M136"
-			#define ratmag "rhs_m136_mag"
+			#define rat "CUP_launch_M136"
+			#define ratmag "ACE_PreloadedMissileDummy_CUP"
 			
 			//Medium MG
-			#define mmg "rhs_weap_m240B"
-			#define mmgmag "rhsusf_100Rnd_762x51" // Mixed ball-tracer
+			#define mmg "CUP_lmg_M240"
+			#define mmgmag "CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M" // White tracer
 			
 			//Medium AT
-			#define mat "rhs_weap_fgm148"
-			#define matmag "rhs_fgm148_magazine_AT"
+			#define mat "CUP_launch_Mk153Mod0"
+			#define matmag "CUP_SMAW_HEDP_M"
 			
 			// Rifle with GL and HE grenades - CO, DC, FTLs
-			#define glrifle "rhs_weap_m16a4_carryhandle_M203"
-			#define glriflemag "rhs_mag_30Rnd_556x45_M855A1_Stanag"
-			#define glriflemag_tr "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"
-			#define glmag {"rhs_mag_M433_HEDP",15}
+			#define glrifle "CUP_arifle_M16A4_GL"
+			#define glriflemag "CUP_30Rnd_556x45_Stanag"
+			#define glriflemag_tr "30Rnd_556x45_Stanag_Tracer_Red"
+			#define glmag {"CUP_1Rnd_HEDP_M203",15}
 			
 			//Marksman
-			#define dmr "hlc_rifle_M21"
-			#define dmrMag "hlc_20Rnd_762x51_B_M14"
+			#define dmr "CUP_srifle_M14_DMR"
+			#define dmrMag "CUP_20Rnd_762x51_DMR"
 			
 			//Sniper
-			#define sniper "rhs_weap_XM2010"
-			#define snipermag "rhsusf_5Rnd_300winmag_xm2010"
+			#define sniper "CUP_srifle_M40A3"
+			#define snipermag "CUP_5Rnd_762x51_M24"
 			
 			// Standard Sub-machine Gun/Personal Defence Weapon (Aircraft Pilot, Sub-machine-gunner, Vehicle Crew) 
-			#define smg "hlc_smg_mp5n" 
-			#define smgmag "hlc_30Rnd_9x19_B_MP5"
-			#define smgmag_tr "30Rnd_45ACP_Mag_SMG_01_tracer_green"
+			#define smg "CUP_smg_MP5A5" 
+			#define smgmag "CUP_30Rnd_9x19_MP5"
 			
 			// Smoke for FTLs, Squad Leaders, etc
-			#define glsmoke {"rhs_mag_M714_white",8},  \
-								{"rhs_mag_M715_green",4}, \
-								{"rhs_mag_M713_red",4} , \
-								{"rhs_mag_M716_yellow",4}
+			#define glsmoke {"CUP_1Rnd_Smoke_M203",8},  \
+								{"CUP_1Rnd_SmokeGreen_M203",4}, \
+								{"CUP_1Rnd_SmokeRed_M203",4} , \
+								{"CUP_1Rnd_SmokeYellow_M203",4}
 
 			// Flare gl grenades - CO, DC, FTLs - Will need to be added for night missions
-			#define glflare 	{"rhs_mag_M585_white",3}, \
-									{"rhs_mag_M662_red",2}, \
-									{"rhs_mag_M661_green",2}
+			#define glflare 	{"CUP_FlareWhite_M203",3}, \
+									{"CUP_FlareRed_M203",2}, \
+									{"CUP_FlareGreen_M203",2}
 									
 			// Grenades
-			#define grenade "rhs_mag_m67"
-			#define smokegrenadewhite "rhs_mag_an_m8hc"
-			#define smokegrenadegreen "rhs_mag_m18_green"
+			#define grenade "CUP_HandGrenade_M67"
+			#define smokegrenadewhite "SmokeShell"
+			#define smokegrenadegreen "SmokeShellGreen"
 			#define handFlareRed "ACE_HandFlare_Red"
 			#define handFlareGreen "ACE_HandFlare_Green"
 			#define handFlareWhite "ACE_HandFlare_White"
@@ -158,34 +158,35 @@ class USA {
 			//=== Clothes ===
 
 			//Uniform		
-			#define default_uniform "rhs_uniform_cu_ocp_patchless"
-				
+			#define default_uniform "CUP_U_B_USMC_MARPAT_WDL_RollUpKneepad", "CUP_U_B_USMC_MARPAT_WDL_RolledUp", "CUP_U_B_USMC_MARPAT_WDL_TwoKneepads", "CUP_U_B_USMC_MARPAT_WDL_Kneepad", "CUP_U_B_USMC_MARPAT_WDL_Sleeves"
+			#define crew_uniform "CUP_U_B_USMC_PilotOverall"
+			
 			//Headgear
-			#define leader_headgear "rhsusf_patrolcap_ocp", "rhs_Booniehat_ocp"
-			#define default_headgear "rhsusf_ach_bare_tan", "rhsusf_ach_helmet_ocp", "rhsusf_ach_helmet_ess_ocp", "rhsusf_ach_helmet_headset_ocp", "rhsusf_ach_helmet_headset_ess_ocp"
-			#define vcrew_headgear "rhsusf_cvc_green_helmet"
-			#define pilot_headgear "rhsusf_hgu56p"
-			#define sniper_headgear "rhs_Booniehat_ocp" 
+			#define leader_headgear "CUP_H_FR_BoonieMARPAT", "CUP_H_USMC_Officer_Cap"
+			#define default_headgear "CUP_H_USMC_Goggles_HelmetWDL", "CUP_H_USMC_Headset_HelmetWDL", "CUP_H_USMC_HelmetWDL", "CUP_H_FR_ECH", "CUP_H_USMC_Headset_GoggleW_HelmetWDL"
+			#define vcrew_headgear "CUP_H_USMC_Crew_Helmet"
+			#define pilot_headgear "CUP_H_USMC_Helmet_Pilot"
+			#define sniper_headgear "CUP_H_FR_BoonieMARPAT" 
 			
 			//Backpack
-			#define default_backpack "rhsusf_assault_eagleaiii_ocp"
-			#define crew_backpack "rhsusf_assault_eagleaiii_ocp"
+			#define default_backpack "CUP_B_USMC_MOLLE"
+			#define crew_backpack "CUP_B_USMC_MOLLE"
 			#define engineer_backpack "B_Kitbag_cbr"
-			#define mortg_backpack "O_Mortar_01_weapon_F"
-			#define morta_backpack "O_Mortar_01_support_F"
+			#define mortg_backpack "CUP_B_M252_Gun_Bag"
+			#define morta_backpack "CUP_B_M252_Bipod_Bag"
 			
 			//Vests
-			#define vest_default "rhsusf_iotv_ocp_rifleman"
-			#define vest_medic "rhsusf_iotv_ocp_medic"
-			#define vest_engineer "rhsusf_iotv_ocp_repair"
-			#define vest_sniper "rhsusf_iotv_ocp_rifleman"
-			#define vest_vehiclecrew "rhsusf_iotv_ocp"
-			#define vest_leader "rhsusf_iotv_ocp_squadleader"
-			#define vest_ftl_leader "rhsusf_iotv_ocp_teamleader"
+			#define vest_default "CUP_V_B_MTV_Patrol"
+			#define vest_medic "CUP_V_B_MTV_Pouches"
+			#define vest_engineer "CUP_V_B_MTV_Mine"
+			#define vest_sniper "CUP_V_B_MTV_Marksman"
+			#define vest_vehiclecrew "CUP_V_B_PilotVest"
+			#define vest_leader "CUP_V_B_MTV_TL"
+			#define vest_ftl_leader "CUP_V_B_MTV_PistolBlack"
 			
 			//Face
-			#define facecover "TRYK_Shemagh_shade"
-			#define glasses "BWA3_G_Combat_Orange", "BWA3_G_Combat_Clear", "BWA3_G_Combat_Black", "TRYK_Shemagh_ESS", "TRYK_Shemagh_shade"
+			#define facecover "G_Bandanna_khk"
+			#define glasses "G_Aviator", "G_Shades_Black", "G_Shades_Blue", "G_Sport_Blackred", "G_Spectacles_Tinted"
 			
 			//=== EQUIPMENT ===
 			//MUST BE ONE LINE
