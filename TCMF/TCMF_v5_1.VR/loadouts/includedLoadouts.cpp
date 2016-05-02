@@ -3,5 +3,5 @@ class TB3_Gear {
 #include "LoadoutsUSA.cpp"
 #include "LoadoutsUSMC.cpp"
 #include "LoadoutsVDV.cpp"
-#include "LoadoutsCDF.cpp"
+#include "LoadoutsNAPA.cpp"
 }
