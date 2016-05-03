@@ -197,7 +197,7 @@ class USMC {
 			#define default_equipment "ItemWatch","ItemMap","ItemCompass"
 			#define crew_equipment "ItemWatch","ItemMap","ItemGPS","ItemCompass","ACE_NVG_Gen4" //With GPs and NVG for vic crews
 			
-			//========================Class Loadouts Definitions========================
+		//========================Class Loadouts Definitions========================
 			//================Platoon Leader==================
 			class PC {
 				weapons[] = {glrifle,binoculars};
@@ -216,7 +216,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -251,7 +251,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -286,7 +286,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -320,7 +320,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,4},
+					    {smokegrenadewhite,3},
 						{long_range,1},
 						{short_range,1}
 					};
@@ -350,7 +350,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1},
@@ -383,7 +383,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1},
@@ -606,7 +606,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -669,7 +669,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -761,7 +761,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -792,7 +792,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -893,7 +893,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
