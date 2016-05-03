@@ -215,7 +215,7 @@ class USA {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -250,7 +250,7 @@ class USA {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -285,7 +285,7 @@ class USA {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -319,7 +319,7 @@ class USA {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,4},
+					    {smokegrenadewhite,3},
 						{long_range,1},
 						{short_range,1}
 					};
@@ -349,7 +349,7 @@ class USA {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1},
@@ -382,7 +382,7 @@ class USA {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1},
@@ -605,7 +605,7 @@ class USA {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -668,7 +668,7 @@ class USA {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -760,7 +760,7 @@ class USA {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -791,7 +791,7 @@ class USA {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -892,7 +892,7 @@ class USA {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,1},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
