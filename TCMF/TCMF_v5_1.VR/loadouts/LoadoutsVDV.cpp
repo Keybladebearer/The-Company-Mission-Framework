@@ -71,7 +71,7 @@ class VDV {
 			#define glrifle "CUP_arifle_AK74_GL"
 			#define glriflemag "CUP_30Rnd_545x39_AK_M"
 			#define glriflemag_tr "CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M"
-			#define glmag {"CUP_1Rnd_HE_GP25_M,15"} //use with HLC AK's only
+			#define glmag {"CUP_1Rnd_HE_GP25_M",15} //use with HLC AK's only
 			
 			//Marksman/Sniper
 			#define dmr "CUP_srifle_SVD"
@@ -161,10 +161,10 @@ class VDV {
 			#define sniper_headgear ""
 			
 			//Backpack
-			#define default_backpack "CUP_B_RUS_Pack_MG"
-			#define rpg_backpack "CUP_B_RUS_Pack_AT"
+			#define default_backpack "CUP_B_HikingPack_Civ"
+			#define rpg_backpack "CUP_B_RPGPack_Khaki"
 			#define pilot_backpack "CUP_B_AssaultPack_Coyote"
-			#define engineer_backpack "CUP_B_RUS_Pack_Engineer"
+			#define engineer_backpack "CUP_B_RUS_Backpack"
 			#define mortg_backpack "CUP_B_Podnos_Gun_Bag"
 			#define morta_backpack "CUP_B_Podnos_Bipod_Bag"
 			
