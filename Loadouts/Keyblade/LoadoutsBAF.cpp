@@ -1,6 +1,6 @@
-class USMC {
+class BAF {
 			// Example: [this,"USA","PL"] call tb3_fLoadout; [this, class, loadout]	
-			// Default US Marine Gear Script by Keyblade
+			// Default British Armed Forces Gear Script by Keyblade
 			// Info:
 			// - If it is crashing ARMA, check for a missing comma, or " (it will tell you the line number to look at, if a definition is in front check that)
 			// - For multi line definitions use \
@@ -40,26 +40,26 @@ class USMC {
 			
 			//Attachments
 			#define suppressor "CUP_muzzle_snds_M16" // Rifle only
-			#define carbine_suppressor "CUP_muzzle_snds_SCAR_L" // Carbine only	
-			#define laser_light "CUP_acc_ANPEQ_15" // Rifle/Carbine only
+			#define laser_light "CUP_acc_ANPEQ_15" // Rifle only
 			
-			#define aim_scope "CUP_optic_CompM4"
-			#define holo_scope "CUP_optic_Eotech533"
+			#define aim_scope "BWA3_optic_EOTech_tan_Mag_Off"
+			#define holo_scope "CUP_optic_HoloBlack"
 			#define rifle_scope "CUP_optic_ACOG"
 			#define mg_scope "CUP_optic_ElcanM145"
-			#define sniper_scope "CUP_optic_LeupoldMk4"
-			#define marksman_scope "CUP_optic_LeupoldM3LR"
+			#define sniper_scope "CUP_optic_SB_3_12x50_PMII"
+			#define marksman_scope "CUP_optic_SB_11_4x20_PM"
+			#define bipod "CUP_bipod_Harris_1A2_L"
 			
 			// Standard Riflemen (Assistants, Rifleman)
-			#define rifle "CUP_arifle_M16A4_Base"
+			#define rifle "CUP_arifle_L85A2"
 			#define riflemag "CUP_30Rnd_556x45_Stanag"
 			#define riflemag_tr "30Rnd_556x45_Stanag_Tracer_Red"
-			#define carbine "CUP_arifle_Mk16_CQC_FG"
+			#define carbine "CUP_arifle_L85A2"
 			#define carbinemag "CUP_30Rnd_556x45_Stanag"
 			#define carbinemag_tr "30Rnd_556x45_Stanag_Tracer_Red"
 			
 			//Auto-Rifleman
-			#define ar "CUP_lmg_m249_pip3"
+			#define ar "CUP_lmg_L110A1"
 			#define armag "CUP_200Rnd_TE4_Red_Tracer_556x45_L110A1" // Red tracer
 			
 			//Rifleman AT
@@ -68,25 +68,25 @@ class USMC {
 			
 			//Medium MG
 			#define mmg "CUP_lmg_M240"
-			#define mmgmag "CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M" // White tracer
+			#define mmgmag "CUP_200Rnd_TE4_Green_Tracer_556x45_L110A1" // White tracer
 			
 			//Medium AT
-			#define mat "CUP_launch_Mk153Mod0"
-			#define matmag "CUP_SMAW_HEDP_M"
+			#define mat "CUP_launch_Javelin"
+			#define matmag "CUP_Javelin_M"
 			
 			// Rifle with GL and HE grenades - CO, DC, FTLs
-			#define glrifle "CUP_arifle_M16A4_GL"
+			#define glrifle "CUP_arifle_L85A2_GL"
 			#define glriflemag "CUP_30Rnd_556x45_Stanag"
 			#define glriflemag_tr "30Rnd_556x45_Stanag_Tracer_Red"
 			#define glmag {"CUP_1Rnd_HEDP_M203",15}
 			
 			//Marksman
-			#define dmr "CUP_srifle_M14_DMR"
-			#define dmrMag "CUP_20Rnd_762x51_DMR"
+			#define dmr "CUP_srifle_L129A1_HG"
+			#define dmrMag "CUP_20Rnd_762x51_L129_M"
 			
 			//Sniper
-			#define sniper "CUP_srifle_M40A3"
-			#define snipermag "CUP_5Rnd_762x51_M24"
+			#define sniper "hlc_rifle_awmagnum"
+			#define snipermag "hlc_5rnd_300WM_FMJ_AWM"
 			
 			// Standard Sub-machine Gun/Personal Defence Weapon (Aircraft Pilot, Sub-machine-gunner, Vehicle Crew) 
 			#define smg "CUP_smg_MP5A5" 
@@ -104,7 +104,7 @@ class USMC {
 									{"CUP_FlareGreen_M203",2}
 									
 			// Grenades
-			#define grenade "CUP_HandGrenade_M67"
+			#define grenade "CUP_HandGrenade_L109A1_HE"
 			#define smokegrenadewhite "SmokeShell"
 			#define smokegrenadegreen "SmokeShellGreen"
 			#define handFlareRed "ACE_HandFlare_Red"
@@ -158,31 +158,31 @@ class USMC {
 			//=== Clothes ===
 
 			//Uniform		
-			#define default_uniform "CUP_U_B_USMC_MARPAT_WDL_RollUpKneepad", "CUP_U_B_USMC_MARPAT_WDL_RolledUp", "CUP_U_B_USMC_MARPAT_WDL_TwoKneepads", "CUP_U_B_USMC_MARPAT_WDL_Kneepad", "CUP_U_B_USMC_MARPAT_WDL_Sleeves"
-			#define crew_uniform "CUP_U_B_USMC_PilotOverall"
+			#define default_uniform "CUP_U_B_BAF_DPM_Tshirt" , "CUP_U_B_BAF_DPM_S2_UnRolled" , "CUP_U_B_BAF_DPM_S1_RolledUp"
+			#define crew_uniform "CUP_U_B_BAF_DPM_S2_UnRolled"
 			
 			//Headgear
-			#define leader_headgear "CUP_H_FR_BoonieMARPAT", "CUP_H_USMC_Officer_Cap"
-			#define default_headgear "CUP_H_USMC_Goggles_HelmetWDL", "CUP_H_USMC_Headset_HelmetWDL", "CUP_H_USMC_HelmetWDL", "CUP_H_FR_ECH", "CUP_H_USMC_Headset_GoggleW_HelmetWDL"
-			#define vcrew_headgear "CUP_H_USMC_Crew_Helmet"
-			#define pilot_headgear "CUP_H_USMC_Helmet_Pilot"
-			#define sniper_headgear "CUP_H_FR_BoonieMARPAT" 
+			#define leader_headgear "CUP_H_BAF_Officer_Beret_PRR_U"
+			#define default_headgear "CUP_H_BAF_Helmet_1_DPM" , "CUP_H_BAF_Helmet_Net_2_DPM" , "CUP_H_BAF_Helmet_2_DPM"
+			#define vcrew_headgear "CUP_H_BAF_Crew_Helmet_DPM"
+			#define pilot_headgear "CUP_H_BAF_Helmet_Pilot"
+			#define sniper_headgear "CUP_H_USArmy_Boonie" 
 			
 			//Backpack
-			#define default_backpack "CUP_B_USMC_MOLLE"
-			#define crew_backpack "CUP_B_USMC_MOLLE"
+			#define default_backpack "CUP_B_Bergen_BAF"
+			#define crew_backpack "CUP_B_Bergen_BAF"
 			#define engineer_backpack "B_Kitbag_cbr"
 			#define mortg_backpack "CUP_B_M252_Gun_Bag"
 			#define morta_backpack "CUP_B_M252_Bipod_Bag"
 			
 			//Vests
-			#define vest_default "CUP_V_B_MTV_Patrol"
-			#define vest_medic "CUP_V_B_MTV_Pouches"
-			#define vest_engineer "CUP_V_B_MTV_Mine"
-			#define vest_sniper "CUP_V_B_MTV_Marksman"
-			#define vest_vehiclecrew "CUP_V_B_PilotVest"
-			#define vest_leader "CUP_V_B_MTV_TL"
-			#define vest_ftl_leader "CUP_V_B_MTV_PistolBlack"
+			#define vest_default "CUP_V_BAF_Osprey_Mk2_DPM_Soldier1"
+			#define vest_medic "CUP_V_BAF_Osprey_Mk2_DPM_Medic"
+			#define vest_engineer "CUP_V_BAF_Osprey_Mk2_DPM_Sapper"
+			#define vest_sniper "CUP_V_BAF_Osprey_Mk2_DPM_Soldier1"
+			#define vest_vehiclecrew "CUP_V_BAF_Osprey_Mk2_DPM_Pilot"
+			#define vest_leader "CUP_V_BAF_Osprey_Mk2_DPM_Grenadier"
+			#define vest_ftl_leader "CUP_V_BAF_Osprey_Mk2_DPM_Grenadier"
 			
 			//Face
 			#define facecover "G_Bandanna_khk"
@@ -197,7 +197,7 @@ class USMC {
 			#define default_equipment "ItemWatch","ItemMap","ItemCompass"
 			#define crew_equipment "ItemWatch","ItemMap","ItemGPS","ItemCompass","ACE_NVG_Gen4" //With GPs and NVG for vic crews
 			
-		//========================Class Loadouts Definitions========================
+			//========================Class Loadouts Definitions========================
 			//================Platoon Leader==================
 			class PC {
 				weapons[] = {glrifle,binoculars};
@@ -216,7 +216,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,1},
+					    {smokegrenadewhite,2},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -251,7 +251,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,1},
+					    {smokegrenadewhite,2},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -286,7 +286,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,1},
+					    {smokegrenadewhite,2},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -320,7 +320,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,3},
+					    {smokegrenadewhite,4},
 						{long_range,1},
 						{short_range,1}
 					};
@@ -350,7 +350,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,1},
+					    {smokegrenadewhite,2},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1},
@@ -383,7 +383,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,1},
+					    {smokegrenadewhite,2},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1},
@@ -606,7 +606,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,1},
+					    {smokegrenadewhite,2},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -669,7 +669,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,1},
+					    {smokegrenadewhite,2},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -743,7 +743,7 @@ class USMC {
 				assignedItems[] = {default_equipment};
 				items[] = {	}; //do not use if using specific allocation of items
 				
-				priKit[] = {marksman_scope};
+				priKit[] = {marksman_scope,bipod};
 				secKit[] = {};
 			};
 			//================Sniper==================
@@ -761,7 +761,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,1},
+					    {smokegrenadewhite,2},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -792,7 +792,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,1},
+					    {smokegrenadewhite,2},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
@@ -893,7 +893,7 @@ class USMC {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,1},
+					    {smokegrenadewhite,2},
 						{grenade,2},
 						{long_range,1},
 						{short_range,1}
