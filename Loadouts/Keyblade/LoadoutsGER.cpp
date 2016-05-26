@@ -1,102 +1,112 @@
-class RUS {
-			// Example: [this,"RUS","PL"] call tb3_fLoadout; [this, class, loadout]	
-			// Russian OpFor Gear Script by HawkBlade
+class GER {
+			// Example: [this,"USA","PL"] call tb3_fLoadout; [this, class, loadout]	
+			// Default German Motorized Gear Script by Keyblade
 			// Info:
-			// - If it is crashing ARMA, check for a missing comma, or " (it will tell you the line number to look at)
+			// - If it is crashing ARMA, check for a missing comma, or " (it will tell you the line number to look at, if a definition is in front check that)
 			// - For multi line definitions use \
 			// - All loadouts listed are customised to correct equipment, so have fun with them
 			
 			//		Infantry Loadouts
 			//		PC			- Platoon Commander 
-			//		RTO 		- Platoon Sgt. (as Radio Operator)
-			//		SL 			- Squad leader
-			//      FO          - Forward Observer
-			//		MOL			- Mortar Leader 
-			//		MED 		- Medic
+			//		RTO 			- Platoon Sgt. (as Radio Operator)
+			//		SL 			- Squad Leader
+			//      	FO          		- Forward Observer
+			//		MOL			- Mortar Leader
+			//		MED 			- Medic
 			//		FTL			- Fire team leader
-			//		RIF 		- Rifleman 
+			//		RIF 			- Rifleman 
 			//		AR 			- Automatic rifleman
 			//		ARR			- Assistant automatic rifleman 
 			//		RAT			- Rifleman (AT)
-			//      MMG         - Medium MG
-			//      MMGA        - Mediem MG assistant
+			//      	MMG     	    	- Medium MG
+			//		MMGA        		- Medium MG assistant
 			//		MAT			- Medium AT
-			//		MATA		- Medium AT assistant
-			//		MARK		- Marksman
+			//		MATA			- Medium AT assistant
+			//		MARK			- Marksman
 			//		SN			- Sniper
 			//		SP			- Spotter (for sniper) 
-			//		VC			- Vehicle crew 
-			//		PIL		    - Pilot
+			//		VC			- Vehicle Crew 
+			//		PIL			- Pilot / Aircrew
 			//		ENG			- Engineer
 			//
 			//		Vehicle Cargo Loadouts
-			//		V_CAR		- car/4x4/jeep
-			//		V_TR		- truck
-			//		V_IFV		- ifv
+			//		V_CAR		- Car/4x4/jeep
+			//		V_TR		- Truck
+			//		V_IFV		- Ifv
 			
 			
 			//========================Equipment Definitions========================
 			//=== Weapons ===
 			
 			//Attachments
-			#define rifle_sup "hlc_muzzle_545SUP_AK"
-			#define ar_sup "hlc_muzzle_762SUP_AK"
-			#define aim_scope "hlc_optic_kobra"
-			#define ar_scope "HLC_Optic_1p29"
-			#define marksman_scope "HLC_Optic_PSO1"
-			#define mat_scope "rhs_acc_pgo7v"
+			#define suppressor "CUP_muzzle_snds_M16" // Rifle only
+			#define laser_light "CUP_acc_ANPEQ_15" // Rifle only
+			
+			#define aim_scope "BWA3_optic_EOTech_tan_Mag_Off"
+			#define holo_scope "CUP_optic_Eotech533"
+			#define rifle_scope "CUP_optic_ACOG"
+			#define mg_scope "CUP_optic_ElcanM145"
+			#define sniper_scope "CUP_optic_SB_3_12x50_PMII"
+			#define marksman_scope "CUP_optic_SB_11_4x20_PM"
+			#define bipod "CUP_bipod_Harris_1A2_L"
 			
 			// Standard Riflemen (Assistants, Rifleman)
-			#define rifle "hlc_rifle_aks74"
-			#define riflemag "hlc_30Rnd_545x39_B_AK"
-			#define riflemag_tr "hlc_30Rnd_545x39_t_ak" 
+			#define rifle "hlc_rifle_G36V"
+			#define riflemag "hlc_30rnd_556x45_EPR_G36"
+			#define riflemag_tr "hlc_30rnd_556x45_Tracers_G36"
+			#define carbine "hlc_rifle_G36CV"
+			#define carbinemag "hlc_30rnd_556x45_EPR_G36"
+			#define carbinemag_tr "hlc_30rnd_556x45_Tracers_G36"
 			
 			//Auto-Rifleman
-			#define ar "hlc_rifle_rpk"
-			#define armag "hlc_75Rnd_762x39_m_rpk" // Mixed tracer-ball 75 Round Mag
+			#define ar "BWA3_MG4"
+			#define armag "BWA3_200Rnd_556x45_Tracer" // Red tracer
 			
 			//Rifleman AT
-			#define rat "rhs_weap_rpg26"
-			#define ratmag "rhs_rpg26_mag"
+			#define rat "BWA3_Pzf3"
+			#define ratmag "BWA3_Pzf3_IT"
 			
 			//Medium MG
-			#define mmg "rhs_weap_pkm"
-			#define mmgmag "rhs_100Rnd_762x54mmR_green"
+			#define mmg "BWA3_MG5"
+			#define mmgmag "BWA3_120Rnd_762x51_Tracer" // White tracer
 			
 			//Medium AT
-			#define mat "rhs_weap_rpg7"
-			#define matmag "rhs_rpg7_PG7VL_mag"
+			#define mat "BWA3_RGW90"
+			#define matmag "BWA3_RGW90_HH"
 			
 			// Rifle with GL and HE grenades - CO, DC, FTLs
-			#define glrifle "hlc_rifle_aks74_GL"
-			#define glriflemag "hlc_30Rnd_545x39_B_AK"
-			#define glriflemag_tr "hlc_30Rnd_545x39_t_ak"
-			#define glmag {"hlc_VOG25_AK,15"} //use with HLC AK's only
+			#define glrifle "hlc_rifle_G36VAG36"
+			#define glriflemag "hlc_30rnd_556x45_EPR_G36"
+			#define glriflemag_tr "hlc_30rnd_556x45_Tracers_G36"
+			#define glmag {"CUP_1Rnd_HEDP_M203",15}
 			
-			//Marksman/Sniper
-			#define dmr "rhs_weap_svdp_wd"
-			#define sniper "rhs_weap_svdp_wd" // has camo skin
-			#define dmrMag "rhs_10Rnd_762x54mmR_7N1"
+			//Marksman
+			#define dmr "BWA3_G28_Assault"
+			#define dmrMag "BWA3_20Rnd_762x51_G28_AP"
+			
+			//Sniper
+			#define sniper "hlc_rifle_awmagnum"
+			#define snipermag "hlc_5rnd_300WM_FMJ_AWM"
 			
 			// Standard Sub-machine Gun/Personal Defence Weapon (Aircraft Pilot, Sub-machine-gunner, Vehicle Crew) 
-			#define smg "hlc_rifle_aks74u" 
-			#define smgmag "hlc_30Rnd_545x39_B_AK"
-			#define smgmag_tr "hlc_30Rnd_545x39_t_ak"
+			#define smg "hlc_smg_mp5a3"
+			#define smgmag "hlc_30Rnd_9x19_B_MP5"
 			
-			// Smoke for FTLs, Squad Leaders, etc //use with HLC AK's only
-			#define glsmoke {"hlc_GRD_White",6},  \
-								{"hlc_GRD_green",3}, \
-								{"hlc_GRD_Red",3},  \
-								{"hlc_GRD_yellow",3}
+			// Smoke for FTLs, Squad Leaders, etc
+			#define glsmoke {"CUP_1Rnd_Smoke_M203",8},  \
+								{"CUP_1Rnd_SmokeGreen_M203",4}, \
+								{"CUP_1Rnd_SmokeRed_M203",4} , \
+								{"CUP_1Rnd_SmokeYellow_M203",4}
 
-			// Flare gl grenades - CO, DC, FTLs        //Dont use with HLC AK's at all
-			#define glflare 	{"rhs_VG40OP_white",3}, \
-									{"rhs_VG40OP_red",2}, \
-									{"rhs_VG40OP_green",2}
+			// Flare gl grenades - CO, DC, FTLs - Will need to be added for night missions
+			#define glflare 	{"CUP_FlareWhite_M203",3}, \
+									{"CUP_FlareRed_M203",2}, \
+									{"CUP_FlareGreen_M203",2}
 									
 			// Grenades
-			#define grenade "rhs_mag_rgd5"
-			#define smokegrenadewhite "rhs_mag_rdg2_white"
+			#define grenade "BWA3_DM51A1"
+			#define smokegrenadewhite "BWA3_DM25"
+			#define smokegrenadegreen "BWA3_DM32_Orange"
 			#define handFlareRed "ACE_HandFlare_Red"
 			#define handFlareGreen "ACE_HandFlare_Green"
 			#define handFlareWhite "ACE_HandFlare_White"
@@ -105,7 +115,7 @@ class RUS {
 			//=== MISC ===
 			
 			//Chemical lights
-			#define chemred "Chemlight_red"
+			#define chemblue "Chemlight_blue"
 			
 			// ace equipment - what everyone should have
 			#define ace_default	{"ACE_fieldDressing",10}, \
@@ -133,11 +143,11 @@ class RUS {
 			//Double Misc
 			#define toolkit "ToolKit"
 			#define explosive "DemoCharge_Remote_Mag"
-			#define at_mine "rhs_mine_tm62m_mag"
-			#define ap_mine "rhs_mine_pmn2_mag"
+			#define at_mine "ATMine_Range_Mag"
+			#define ap_mine "APERSBoundingMine_Range_Mag"
 			#define minedetector "MineDetector"
 			#define binoculars "Binocular"
-			#define range_finder "rhs_pdu4"
+			#define range_finder "lerca_1200_tan"
 			#define laserd "Laserdesignator"
 			#define battery "Laserbatteries"
 			
@@ -148,44 +158,45 @@ class RUS {
 			//=== Clothes ===
 
 			//Uniform		
-			#define default_uniform "rhs_uniform_flora_patchless"
-			#define pilot_uniform "rhs_uniform_df15"
-			#define sniper_uniform "rhs_uniform_flora_patchless"
-				
+			#define default_uniform "BWA3_Uniform2_Tropen", "BWA3_Uniform_Tropen"
+			#define crew_uniform "BWA3_Uniform_Crew_Tropen"
+			
 			//Headgear
-			#define leader_headgear "rhs_fieldcap"
-			#define default_headgear "rhs_6b27m"
-			#define vcrew_headgear "rhs_tsh4"
-			#define pilot_headgear "rhs_zsh7a"
-			#define aircrew_headgear "rhs_zsh7a_mike"
-			#define sniper_headgear "rhs_6b28_flora_bala"
+			#define leader_headgear "BWA3_Beret_PzGren"
+			#define default_headgear "BWA3_M92_Tropen"
+			#define vcrew_headgear "BWA3_CrewmanKSK_Tropen_Headset"
+			#define pilot_headgear "BWA3_Knighthelm"
+			#define sniper_headgear "BWA3_Booniehat_Tropen" 
 			
 			//Backpack
-			#define default_backpack "rhs_assault_umbts"
-			#define rpg_backpack "rhs_assault_umbts"
-			#define pilot_backpack "rhs_assault_umbts"
-			#define engineer_backpack "B_Kitbag_sgg"
-			#define mortg_backpack "I_Mortar_01_weapon_F"
-			#define morta_backpack "I_Mortar_01_support_F"
-			
+			#define default_backpack "BWA3_PatrolPack_Tropen"
+			#define crew_backpack "BWA3_FieldPack_Tropen"
+			#define engineer_backpack "BWA3_PatrolPack_Tropen"
+			#define mortg_backpack "CUP_B_M252_Gun_Bag"
+			#define morta_backpack "CUP_B_M252_Bipod_Bag"
 			
 			//Vests
-			#define vest_default "rhs_6b23_rifleman"
-			#define vest_medic "rhs_6b23_medic"
-			#define vest_engineer "rhs_6b23_engineer"
-			#define vest_sniper "rhs_6b23_sniper"
-			#define vest_vehiclecrew "rhs_6b23_crew"
-			#define vest_pilot "rhs_6sh46"
-			#define vest_leader "rhs_6b23_rifleman"
+			#define vest_default "BWA3_Vest_Rifleman1_Tropen"
+			#define vest_medic "BWA3_Vest_Medic_Tropen"
+			#define vest_engineer "BWA3_Vest_Rifleman1_Tropen"
+			#define vest_sniper "BWA3_Vest_Tropen"
+			#define vest_vehiclecrew "BWA3_Vest_Tropen"
+			#define vest_leader "BWA3_Vest_Leader_Tropen"
+			#define vest_ftl_leader "BWA3_Vest_Leader_Tropen"
 			
 			//Face
-			#define facecover "rhs_scarf"
+			#define facecover "G_Bandanna_khk"
+			#define glasses "G_Aviator", "G_Shades_Black", "G_Shades_Blue", "G_Sport_Blackred", "G_Spectacles_Tinted"
 			
 			//=== EQUIPMENT ===
 			//MUST BE ONE LINE
+			#define leader_equipment "ItemMap","ItemGPS","ItemCompass","ItemWatch"//With GPS
+			#define default_equipment "ItemMap","ItemCompass","ItemWatch"
+			#define crew_equipment "ItemMap","ItemGPS","ItemCompass","ACE_NVG_Gen4","ItemWatch" //With GPs and NVG for vic crews
 			#define leader_equipment "ItemWatch","ItemMap","ItemGPS","ItemCompass"//With GPS
 			#define default_equipment "ItemWatch","ItemMap","ItemCompass"
-			#define crew_equipment "ItemWatch","ItemMap","ItemGPS","ItemCompass","ace_NVG_Gen4" //With GPs and NVG for vic crews
+			#define crew_equipment "ItemWatch","ItemMap","ItemGPS","ItemCompass","ACE_NVG_Gen4" //With GPs and NVG for vic crews
+			
 			//========================Class Loadouts Definitions========================
 			//================Platoon Leader==================
 			class PC {
@@ -196,8 +207,7 @@ class RUS {
 					};
 					backpackItems[] = {
 						ace_default,
-						{ace_epipen,1},
-						{glriflemag_tr,2},
+						{ACE_epinephrine,1},
 						glmag,
 						glsmoke
 					};
@@ -207,18 +217,20 @@ class RUS {
 					};
 					uniformItems[] = {
 					    {smokegrenadewhite,2},
+						{grenade,2},
 						{long_range,1},
 						{short_range,1}
 					};
 				goggles[] = {};
 				vest[] = {vest_leader};
 					vestMagazines[] = {
-						{glriflemag,8}
+						{glriflemag,7},
+						{glriflemag_tr,3}
 					};
 				assignedItems[] = {leader_equipment};
 				items[] = {	}; //do not use if using specific allocation of items
 				
-				priKit[] = {};
+				priKit[] = {holo_scope};
 				secKit[] = {};
 			};
 			//================Platoon Sgt. (RTO)==================
@@ -230,10 +242,9 @@ class RUS {
 					};
 					backpackItems[] = {
 						ace_default,
-						{ace_epipen,1},
-						{glriflemag_tr,2},
-						glsmoke,
-						glmag
+						{ACE_epinephrine,1},
+						glmag,
+						glsmoke
 					};
 				headgear[] = {leader_headgear};
 				uniform[] = {default_uniform};
@@ -241,18 +252,20 @@ class RUS {
 					};
 					uniformItems[] = {
 					    {smokegrenadewhite,2},
+						{grenade,2},
 						{long_range,1},
 						{short_range,1}
 					};
 				goggles[] = {};
 				vest[] = {vest_leader};
 					vestMagazines[] = {
-						{glriflemag,8}
+						{glriflemag,7},
+						{glriflemag_tr,3}
 					};
 				assignedItems[] = {leader_equipment};
 				items[] = {	}; //do not use if using specific allocation of items
 				
-				priKit[] = {};
+				priKit[] = {holo_scope};
 				secKit[] = {};
 			};
 			//================Squad Leader (deputy leader)==================
@@ -264,10 +277,9 @@ class RUS {
 					};
 					backpackItems[] = {
 						ace_default,
-						{ace_epipen,1},
-						{glriflemag_tr,2},
-						glsmoke,
-						glmag
+						{ACE_epinephrine,1},
+						glmag,
+						glsmoke
 					};
 				headgear[] = {leader_headgear};
 				uniform[] = {default_uniform};
@@ -275,23 +287,25 @@ class RUS {
 					};
 					uniformItems[] = {
 					    {smokegrenadewhite,2},
+						{grenade,2},
 						{long_range,1},
 						{short_range,1}
 					};
 				goggles[] = {};
-				vest[] = {vest_leader};
+				vest[] = {vest_ftl_leader};
 					vestMagazines[] = {
-						{glriflemag,8}
+						{glriflemag,7},
+						{glriflemag_tr,3}
 					};
 				assignedItems[] = {leader_equipment};
 				items[] = {	}; //do not use if using specific allocation of items
 				
-				priKit[] = {};
+				priKit[] = {holo_scope};
 				secKit[] = {};
 			};
 			//================Forward Observer==================
 			class FO {
-				weapons[] = {smg,laserd};
+				weapons[] = {rifle,laserd};
 				magazines[] = {	}; //do not use if using specific allocation of magazines
 				backpack[] = {default_backpack};
 					backpackMagazines[] = {
@@ -299,14 +313,14 @@ class RUS {
 					};
 					backpackItems[] = {
 						ace_default,
-					    {ace_epipen,1}
+					    {ACE_epinephrine,1}
 					};
 				headgear[] = {default_headgear};
 				uniform[] = {default_uniform};
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {smokegrenadewhite,2},
+					    {smokegrenadewhite,4},
 						{long_range,1},
 						{short_range,1}
 					};
@@ -322,7 +336,7 @@ class RUS {
 				secKit[] = {};
 			};
 			
-						//================Mortar Leader==================
+			//================Mortar Leader==================
 			class MOLG {
 				weapons[] = {rifle,binoculars};
 				magazines[] = {	}; //do not use if using specific allocation of magazines
@@ -339,7 +353,7 @@ class RUS {
 					    {smokegrenadewhite,2},
 						{grenade,2},
 						{long_range,1},
-						{short_range,1},					
+						{short_range,1},
 						ace_default,
 						{ACE_epinephrine,1},
 						{ace_mrangetable, 1}
@@ -372,7 +386,7 @@ class RUS {
 					    {smokegrenadewhite,2},
 						{grenade,2},
 						{long_range,1},
-						{short_range,1},						
+						{short_range,1},
 						ace_default,
 						{ACE_epinephrine,1},
 						{ace_mrangetable, 1}
@@ -390,26 +404,25 @@ class RUS {
 			};
 			//================Medic==================
 			class MED {
-				weapons[] = {smg};
+				weapons[] = {carbine};
 				magazines[] = {	}; //do not use if using specific allocation of magazines
 				backpack[] = {default_backpack};
 					backpackMagazines[] = {
 					};
 					backpackItems[] = {
-						ace_medic,
-						
+						ace_medic
 					};
 				headgear[] = {default_headgear};
 				uniform[] = {default_uniform};
 					uniformMagazines[] = {
 					};
-					uniformItems[] = {					    
-						{short_range,1}
+					uniformItems[] = {
+					    {short_range,1}
 					};
 				goggles[] = {};
 				vest[] = {vest_medic};
 					vestMagazines[] = {
-						{smgmag,5},
+						{carbinemag,7},
 						{smokegrenadewhite,8}
 					};
 				assignedItems[] = {default_equipment};
@@ -427,29 +440,29 @@ class RUS {
 					};
 					backpackItems[] = {
 						ace_default,
-						{ace_epipen,1},
-						{glriflemag_tr,2},
-						glsmoke,
-						glmag
+						{ACE_epinephrine,1},
+						glmag,
+						glsmoke
 					};
-				headgear[] = {leader_headgear};
+				headgear[] = {default_headgear};
 				uniform[] = {default_uniform};
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
 					    {smokegrenadewhite,2},
-						{grnade,1},
+						{grenade,2},
 						{short_range,1}
 					};
 				goggles[] = {};
-				vest[] = {vest_leader};
+				vest[] = {vest_default};
 					vestMagazines[] = {
-						{glriflemag,8}
+						{glriflemag,7},
+						{glriflemag_tr,3}
 					};
 				assignedItems[] = {leader_equipment};
 				items[] = {	}; //do not use if using specific allocation of items
 				
-				priKit[] = {};
+				priKit[] = {holo_scope};
 				secKit[] = {};
 			};
 			//================Rifleman==================
@@ -460,8 +473,7 @@ class RUS {
 					backpackMagazines[] = {
 					};
 					backpackItems[] = {
-						ace_default,
-						{riflemag,2}
+						ace_default
 					};
 				headgear[] = {default_headgear};
 				uniform[] = {default_uniform};
@@ -469,13 +481,13 @@ class RUS {
 					};
 					uniformItems[] = {
 					    {smokegrenadewhite,2},
-						{grenade,1},
+						{grenade,2},
 						{short_range,1}
 					};
 				goggles[] = {};
 				vest[] = {vest_default};
 					vestMagazines[] = {
-						{riflemag,8}
+						{riflemag,11}
 					};
 				assignedItems[] = {default_equipment};
 				items[] = {	}; //do not use if using specific allocation of items
@@ -489,7 +501,7 @@ class RUS {
 				magazines[] = {	}; //do not use if using specific allocation of magazines
 				backpack[] = {default_backpack};
 					backpackMagazines[] = {
-						{armag,3}
+						{armag,1}
 					};
 					backpackItems[] = {
 						ace_default,
@@ -500,9 +512,9 @@ class RUS {
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
-					    {short_range,1},
-						{smokegrenadewhite,2},
-						{grenade,1}
+					    {smokegrenadewhite,2},
+						{grenade,2},
+						{short_range,1}
 					};
 				goggles[] = {};
 				vest[] = {vest_default};
@@ -521,8 +533,7 @@ class RUS {
 				magazines[] = {	}; //do not use if using specific allocation of magazines
 				backpack[] = {default_backpack};
 					backpackMagazines[] = {
-						{armag,3},
-						{riflemag,2}
+						{armag,2}
 					};
 					backpackItems[] = {
 						ace_default
@@ -533,13 +544,13 @@ class RUS {
 					};
 					uniformItems[] = {
 					    {smokegrenadewhite,2},
-						{grenade,1},
+						{grenade,2},
 						{short_range,1}
 					};
 				goggles[] = {};
 				vest[] = {vest_default};
 					vestMagazines[] = {
-						{riflemag,8}
+						{riflemag,11}
 					};
 				assignedItems[] = {default_equipment};
 				items[] = {	}; //do not use if using specific allocation of items
@@ -553,8 +564,7 @@ class RUS {
 				magazines[] = {	}; //do not use if using specific allocation of magazines
 				backpack[] = {default_backpack};
 					backpackMagazines[] = {
-						{ratmag,1},
-						{riflemag,2}
+						{ratmag,1}
 					};
 					backpackItems[] = {
 						ace_default
@@ -565,20 +575,21 @@ class RUS {
 					};
 					uniformItems[] = {
 					    {smokegrenadewhite,2},
-						{grenade,1},
+						{grenade,2},
 						{short_range,1}
 					};
 				goggles[] = {};
 				vest[] = {vest_default};
 					vestMagazines[] = {
-						{riflemag,8}
+						{riflemag,11}
 					};
 				assignedItems[] = {default_equipment};
 				items[] = {	}; //do not use if using specific allocation of items
 				
 				priKit[] = {};
 				secKit[] = {};
-			};//================Medium MG==================
+			};
+			//================Medium MG==================
 			class MMG {
 				weapons[] = {mmg};
 				magazines[] = {	}; //do not use if using specific allocation of magazines
@@ -596,13 +607,14 @@ class RUS {
 					};
 					uniformItems[] = {
 					    {smokegrenadewhite,2},
+						{grenade,2},
 						{long_range,1},
 						{short_range,1}
 					};
 				goggles[] = {};
 				vest[] = {vest_default};
 					vestMagazines[] = {
-						{mmgmag,2}
+						{mmgmag,3}
 					};
 				assignedItems[] = {leader_equipment};
 				items[] = {	}; //do not use if using specific allocation of items
@@ -627,12 +639,13 @@ class RUS {
 					};
 					uniformItems[] = {
 					    {smokegrenadewhite,2},
+						{grenade,2},
 						{short_range,1}
 					};
-				goggles[] = {};
+				goggles[] = {""};
 				vest[] = {vest_default};
 					vestMagazines[] = {
-						{riflemag,8}
+						{riflemag,11}
 					};
 				assignedItems[] = {default_equipment};
 				items[] = {	}; //do not use if using specific allocation of items
@@ -644,9 +657,9 @@ class RUS {
 			class MAT {
 				weapons[] = {rifle,mat};
 				magazines[] = {	}; //do not use if using specific allocation of magazines
-				backpack[] = {rpg_backpack};
+				backpack[] = {default_backpack};
 					backpackMagazines[] = {	
-						{matmag,2}
+						{matmag,1}
 					};
 					backpackItems[] = {
 						ace_default
@@ -657,31 +670,31 @@ class RUS {
 					};
 					uniformItems[] = {
 					    {smokegrenadewhite,2},
+						{grenade,2},
 						{long_range,1},
 						{short_range,1}
 					};
 				goggles[] = {};
 				vest[] = {vest_default};
 					vestMagazines[] = {
-						{riflemag,8}
+						{riflemag,11}
 					};
 				assignedItems[] = {leader_equipment};
 				items[] = {	}; //do not use if using specific allocation of items
 				
 				priKit[] = {};
-				secKit[] = {mat_scope};
+				secKit[] = {};
 			};
 			//================Medium (AT) Assistant==================
 			class MATA {
 				weapons[] = {rifle,range_finder};
 				magazines[] = {	}; //do not use if using specific allocation of magazines
-				backpack[] = {rpg_backpack};
+				backpack[] = {default_backpack};
 					backpackMagazines[] = {	
-						{matmag,4}
+						{matmag,1}
 					};
 					backpackItems[] = {
-						ace_default,
-						{short_range,1}
+						ace_default
 					};
 				headgear[] = {default_headgear};
 				uniform[] = {default_uniform};
@@ -689,14 +702,15 @@ class RUS {
 					};
 					uniformItems[] = {
 					    {smokegrenadewhite,2},
+						{grenade,2},
 						{short_range,1}
 					};
 				goggles[] = {};
 				vest[] = {vest_default};
 					vestMagazines[] = {
-						{riflemag,8}
+						{riflemag,11}
 					};
-				assignedItems[] = {default_equipment};
+				assignedItems[] = {defualt_equipment};
 				items[] = {	}; //do not use if using specific allocation of items
 				
 				priKit[] = {};
@@ -710,22 +724,21 @@ class RUS {
 					backpackMagazines[] = {
 					};
 					backpackItems[] = {
-						ace_default,
-						{dmrMag,2}
+						ace_default
 					};
-				headgear[] = {default_headgear};
+				headgear[] = {sniper_headgear};
 				uniform[] = {default_uniform};
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
 					    {smokegrenadewhite,2},
-						{grenade,1},
+						{grenade,2},
 						{short_range,1}
 					};
 				goggles[] = {};
 				vest[] = {vest_sniper};
 					vestMagazines[] = {
-						{dmrMag,6}
+						{dmrMag,8}
 					};
 				assignedItems[] = {default_equipment};
 				items[] = {	}; //do not use if using specific allocation of items
@@ -744,23 +757,24 @@ class RUS {
 						ace_default
 					};
 				headgear[] = {sniper_headgear};
-				uniform[] = {sniper_uniform};
+				uniform[] = {default_uniform};
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
 					    {smokegrenadewhite,2},
+						{grenade,2},
 						{long_range,1},
 						{short_range,1}
 					};
 				goggles[] = {};
 				vest[] = {vest_sniper};
 					vestMagazines[] = {
-						{dmrMag,6}
+						{snipermag,8}
 					};
 				assignedItems[] = {leader_equipment};
 				items[] = {	}; //do not use if using specific allocation of items
 				
-				priKit[] = {marksman_scope};
+				priKit[] = {sniper_scope};
 				secKit[] = {};
 			};
 			//================Spotter==================
@@ -774,18 +788,19 @@ class RUS {
 						ace_default
 					};
 				headgear[] = {sniper_headgear};
-				uniform[] = {sniper_uniform};
+				uniform[] = {default_uniform};
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
 					    {smokegrenadewhite,2},
+						{grenade,2},
 						{long_range,1},
 						{short_range,1}
 					};
 				goggles[] = {};
 				vest[] = {vest_default};
 					vestMagazines[] = {
-						{riflemag,8}
+						{riflemag,11}
 					};
 				assignedItems[] = {defualt_equipment};
 				items[] = {	}; //do not use if using specific allocation of items
@@ -795,14 +810,15 @@ class RUS {
 			};
 			//================Vehicle Crew==================
 			class VC {
-				weapons[] = {smg};
+				weapons[] = {smg,binoculars};
 				magazines[] = {	}; //do not use if using specific allocation of magazines
-				backpack[] = {default_backpack};
+				backpack[] = {crew_backpack};
 					backpackMagazines[] = {
+					    {smgmag,2}
 					};
 					backpackItems[] = {
 						ace_default,
-						{ace_epipen,1},
+						{ACE_epinephrine,1},
 						{toolkit,1}
 					};
 				headgear[] = {vcrew_headgear};
@@ -817,7 +833,7 @@ class RUS {
 				goggles[] = {};
 				vest[] = {vest_vehiclecrew};
 					vestMagazines[] = {
-						{smgmag,5}
+						{smgmag,2},
 					};
 				assignedItems[] = {crew_equipment};
 				items[] = {	}; //do not use if using specific allocation of items
@@ -829,16 +845,17 @@ class RUS {
 			class PIL {
 				weapons[] = {smg};
 				magazines[] = {	}; //do not use if using specific allocation of magazines
-				backpack[] = {default_backpack};
+				backpack[] = {crew_backpack};
 					backpackMagazines[] = {
+					    {smgmag,2}
 					};
 					backpackItems[] = {
-					    ace_default,
-						{ace_epipen,1},
+						ace_default,
+						{ACE_epinephrine,1},
 						{toolkit,1}
 					};
-				headgear[] = {aircrew_headgear};
-				uniform[] = {default_uniform};
+				headgear[] = {pilot_headgear};
+				uniform[] = {pilot_uniform};
 					uniformMagazines[] = {
 					};
 					uniformItems[] = {
@@ -847,9 +864,9 @@ class RUS {
 						{short_range,1}
 					};
 				goggles[] = {};
-				vest[] = {vest_pilot};
+				vest[] = {vest_vehiclecrew};
 					vestMagazines[] = {
-					    {smgmag,3}
+						{smgmag,2},
 					};
 				assignedItems[] = {crew_equipment};
 				items[] = {	}; //do not use if using specific allocation of items
@@ -859,7 +876,7 @@ class RUS {
 			};
 			//================Engineer==================
 			class ENG {
-				weapons[] = {smg};
+				weapons[] = {rifle};
 				magazines[] = {	}; //do not use if using specific allocation of magazines
 				backpack[] = {engineer_backpack};
 					backpackMagazines[] = {
@@ -877,13 +894,14 @@ class RUS {
 					};
 					uniformItems[] = {
 					    {smokegrenadewhite,2},
+						{grenade,2},
 						{long_range,1},
 						{short_range,1}
 					};
 				goggles[] = {};
 				vest[] = {vest_engineer};
 					vestMagazines[] = {
-						{smgmag,6}
+						{riflemag,8}
 					};
 				assignedItems[] = {leader_equipment};
 				items[] = {	}; //do not use if using specific allocation of items
@@ -897,12 +915,11 @@ class RUS {
 				    {rat,2}
 				};
 				vehCargoMagazines[] = {
-					{riflemag,20},
-					{riflemag_tr,10},
+					{riflemag,30},
+					{riflemag_tr,8},
 					{ratmag,2},
-					{mmgmag,5},
 					{dmrMag,5},
-					{armag,15},
+					{armag,5},
 					{matmag,3},
 					{glmag,5}
 				};
@@ -917,14 +934,13 @@ class RUS {
 				    {rat,2}
 				};
 				vehCargoMagazines[] = {
-					{riflemag,30},
+					{riflemag,50},
 					{riflemag_tr,10},
 					{ratmag,2},
-					{mmgmag,10},
-					{dmrMag,10},
-					{armag,20},
-					{matmag,4},
-					{glmag,10}
+					{dmrMag,20},
+					{armag,15},
+					{matmag,6},
+					{glmag,15}
 				};
 				vehCargoItems[] = { 
 				{smokegrenadewhite,10},
@@ -940,17 +956,16 @@ class RUS {
 				vehCargoMagazines[] = {
 					{riflemag,30},
 					{riflemag_tr,10},
-					{mmgmag,10},
+					{ratmag,2},
 					{dmrMag,10},
-					{armag,20},
+					{armag,10},
 					{matmag,4},
 					{glmag,10},
-					{ratmag,2}
 					
 				};
 				vehCargoItems[] = { 
-				{smokegrenadewhite,10},
-				{grenade,10},
+				{smokegrenadewhite,5},
+				{grenade,5},
 				ace_medic
 				};
 			};
